@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vamax/mobile/landing_page_mobile.dart';
-import 'package:vamax/mobile/mobile_category.dart';
+import 'package:vamax/mobile/product_categories.dart';
 import 'package:vamax/web/landing_page_web.dart';
 import 'package:vamax/web/web_category.dart';
 

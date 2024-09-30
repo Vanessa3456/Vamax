@@ -47,7 +47,7 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.purpleAccent,
+        backgroundColor: Theme.of(context).colorScheme.primary,
         appBar: AppBar(
           elevation: 20.0,
           backgroundColor: Colors.purpleAccent,
@@ -94,18 +94,6 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
             ),
           ),
         ),
-        body: ListView(
-          scrollDirection: Axis.vertical,
-          children: [
-            const Text("Most Searched"),
-            ListView(
-              scrollDirection: Axis.horizontal,
-              children: const [
-                ItemCard(image: "assets/balenciaga.jpg", price: "ksh. 2,000", description: "Balenciaga")
-              ],
-            )
-          ],
-        ),
 
 
 
@@ -132,6 +120,6 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                   icon: Icon(Icons.person_outline), label: "Profile"),
             ]),
       ),
-    );
+     );
   }
 }
