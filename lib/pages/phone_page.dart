@@ -53,10 +53,6 @@ class PhonePage extends StatelessWidget {
           height: 10,
         ),
 
-        Padding(
-          padding: const EdgeInsets.only(left: 8.0),
-          child: Text('Here are the categories of phones that we have'),
-        ),
 
         Expanded(
           child: SizedBox(
@@ -68,7 +64,6 @@ class PhonePage extends StatelessWidget {
                   mainAxisSpacing: 1
                 ),
                 itemCount: 4,
-                //                //   scrollDirection: Axis.values[1],
                 itemBuilder: (context, index) {
                   Phone phone = Phone(
                       name: 'Redmi',
